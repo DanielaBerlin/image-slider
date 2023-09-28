@@ -12,7 +12,7 @@ const nextSlide = () => {
   if (current.nextElementSibling) {
     current.nextElementSibling.classList.add('current');
   } else {
-    slide[0].classList.add('current');
+    slides[0].classList.add('current');
   }
   current.classList.remove('current');
 };
@@ -53,3 +53,5 @@ if (autoscroll) {
     slideInterval = setInterval(nextSlide, intervalTime);
   }
 }
+
+auto();
